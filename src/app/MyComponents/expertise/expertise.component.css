@@ -1,0 +1,265 @@
+
+.custom-background {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 1536px;
+    height: 450px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(60%); /* Decrease the brightness to 50% */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 30px;
+    color: #111;
+}
+
+p.description {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Expertise Buttons */
+.expertise-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.expertise-buttons button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background-color: #eaeaea;
+    color: #444;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.expertise-buttons button.active,
+.expertise-buttons button:hover {
+    background-color: #5d3fd3;
+    color: #fff;
+}
+
+.expertise-buttons span {
+    margin-right: 8px;
+}
+
+/* AI Section */
+.ai-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ai-image img {
+    width: 300px;
+    height: auto;
+}
+
+.ai-content h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.ai-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+/* Content Section */
+.content-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Active Button */
+.expertise-buttons button.active {
+    background-color: #5d3fd3;
+    color: #fff;
+}
+
+/* Container */
+.expertise-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header and Description */
+  h1 {
+    margin-bottom: 10px;
+  }
+  .description {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  /* Buttons */
+  .expertise-buttons {
+    margin-bottom: 20px;
+  }
+  .expertise-buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #f3f3f3;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 16px;
+  }
+  .expertise-buttons button.active {
+    background-color: #5d3fd3;
+    color: white;
+  }
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    height: 500px;
+    margin: 0 auto;
+  }
+  
+  /* Image */
+  .content-image img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  /* Title and Description */
+  .content-details {
+    text-align: left;
+  }
+  .content-details h2 {
+    margin-top: 0;
+    top: 30px;
+    font-size: 34px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  .content-details p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    justify-content: center;
+  }
+
+  /* Container Styles */
+.news-updates-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+  }
+  
+  .news-updates-container h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* News Wrapper for Flex Layout */
+  .news-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows responsiveness */
+    max-width: 1200px;
+    margin: 0 auto; /* Centering the container */
+  }
+  
+  /* Individual News Item */
+  .news-item {
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row with gaps */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .news-item:hover {
+    transform: translateY(-5px); /* Hover Effect */
+  }
+  
+  /* News Item Image */
+  .news-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* News Item Text */
+  .news-item h3 {
+    font-size: 18px;
+    margin: 15px 20px;
+    color: #333;
+  }
+  
+  .news-item p {
+    font-size: 14px;
+    color: #777;
+    margin: 0 20px 20px;
+  }

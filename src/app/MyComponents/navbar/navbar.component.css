@@ -1,0 +1,150 @@
+/* Top Navbar */
+.top-navbar {
+    background-color: #140B4B;
+    color: white;
+    padding: 8px 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed; /* Fixed at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 9999; /* Ensure it stays on top of other content */
+}
+
+.top-navbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.top-navbar i {
+    margin-right: 5px;
+    font-size: 14px;
+}
+
+.top-navbar a:hover {
+    color: #cccccc;
+}
+
+.top-navbar div:last-child a {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+/* Main Navbar */
+.custom-navbar {
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    position: fixed; /* Fixed below the top navbar */
+    top: 40px; /* Adjust this value based on the height of the top navbar */
+    left: 0;
+    right: 0;
+    z-index: 9998; /* Slightly below the top navbar */
+}
+
+.custom-navbar .navbar-brand img {
+    height: 50px;
+    max-width: 100%; /* Ensure image does not overflow the container */
+    object-fit: contain; /* Prevent image from being stretched */
+}
+
+.custom-navbar .nav-link {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 30px;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: lightgrey;
+}
+
+.custom-navbar i {
+    font-size: 18px;
+    color: black;
+}
+
+.custom-navbar i:hover {
+    color: #007bff;
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-color: black;
+    width: 24px;
+    height: 2px;
+    display: block;
+    position: relative;
+    margin: 5px auto;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+    content: '';
+    background-color: black;
+    width: 24px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: 0;
+}
+
+.navbar-toggler-icon::after {
+    top: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .top-navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 5px;
+    }
+
+    .top-navbar div a {
+        margin-bottom: 5px;
+    }
+
+    .custom-navbar .nav-link {
+        margin-right: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .custom-navbar .navbar-brand img {
+        height: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .top-navbar {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+
+    .top-navbar a {
+        margin-right: 10px;
+    }
+
+    .custom-navbar .navbar-brand img {
+        height: 35px;
+    }
+}
+
+/* Ensure content below the navbars is not hidden */
+body {
+    padding-top: 120px; /* Adjusted for combined height of both navbars */
+}
